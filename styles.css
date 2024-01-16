@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+   
+
+
+}
+
+.mystyle {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+    color: blue;
+    flex:1;
+    
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+    height: 700px;
+    padding-top: 200px;
+   
+   
+
+}
+.mys{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+    padding: 5px;
+    flex: 1;
+   
+   
+}
