@@ -11,7 +11,7 @@ function divBox1(num) {
         div1 = document.createElement('div');
         div1.textContent = "";
         div2.append(div1);
-        div1.classList.add("mys"); 
+        div1.classList.add("mys");
     }
 
 
@@ -41,41 +41,46 @@ function loopBox(num) {
 
 
     }
+    let count = 0;
     const cc = document.querySelectorAll('.mys');
     cc.forEach(x => {
-
         x.addEventListener('mouseover', () => {
-            if (clicked) {
-                x.style.backgroundColor = "black"; // custom color button
+            if (clicked || count >= 10) {
+                x.style.backgroundColor = "black";
             } else {
 
+                const darknessPercentage = 90 - (count*10);
 
-                x.style.backgroundColor = randomm();
+
+                // const randomHue = Math.floor(Math.random() * 360); for any color 
+                x.style.backgroundColor = `hsl(${randomm()}, 100%, ${darknessPercentage}%)`;
+
+                count++;
             }
         });
 
+
     });
-
-
 }
 
 function randomm() {
     let numy = Math.floor(Math.random() * 3);
     switch (numy) {
         case 0:
-            return "green";
+            return 0;
         case 1:
-            return "red";
+            return 120;
         case 2:
-            return "blue";
+            return 240;
         case 3:
-            return "yellow";
+            return 300;
 
         //more colors to be added here;
 
     }
 
 }
+
 let clicked = false;
 const bttt = document.querySelector('#bttt');
 bttt.addEventListener('click', () => {
