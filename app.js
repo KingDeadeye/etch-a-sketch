@@ -3,10 +3,10 @@
 let container1 = document.querySelector('.container1');
 
 let div1;
-
+let div2;
 
 function divBox1(num) {
-    let div2 = document.createElement('div');
+    div2 = document.createElement('div');
     for (let i = 0; i < num; i++) {
         div1 = document.createElement('div');
         div1.textContent = "";
